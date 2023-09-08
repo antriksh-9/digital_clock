@@ -6,11 +6,11 @@ let session = document.querySelector(".session");
 let ticking = ()=>{
     let currDate = new Date();
     hourHand.textContent = currDate.getHours();
-    if(hourHand.textContent > 12){
-        hourHand.textContent -=12;
-    }
     if(hourHand.textContent>=12){
         session.textContent = "PM";
+    }
+    if(hourHand.textContent > 12){
+        hourHand.textContent -=12;
     }
     if(hourHand.textContent<10){
         hourHand.textContent = "0"+hourHand.textContent;
