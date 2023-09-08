@@ -6,8 +6,8 @@ let session = document.querySelector(".session");
 let ticking = ()=>{
     let currDate = new Date();
     hourHand.textContent = currDate.getHours();
-    if(hourHand.textContent>=12){
-        session.textContent = "PM";
+    if(hourHand.textContent >= 12){
+        session.textContent = "PM"
     }
     if(hourHand.textContent > 12){
         hourHand.textContent -=12;
